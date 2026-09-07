@@ -36,7 +36,7 @@ export function Header() {
           {nav.map((item) => (
             <Link
               key={item.to}
-              to={item.to}
+              to={item.to as never}
               className="text-sm font-medium text-foreground/80 transition-colors hover:text-accent [&.active]:text-accent"
             >
               {item.label}
@@ -70,7 +70,7 @@ export function Header() {
             {nav.map((item) => (
               <Link
                 key={item.to}
-                to={item.to}
+                to={item.to as never}
                 onClick={() => setOpen(false)}
                 className="border-b border-border/60 py-3 text-sm font-medium last:border-0"
               >

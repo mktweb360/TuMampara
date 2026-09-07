@@ -98,7 +98,7 @@ export function CardLink({
 }) {
   return (
     <Link
-      to={to}
+      to={to as never}
       className="group flex flex-col justify-between border-t-2 border-ink/85 bg-card p-6 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-soft"
     >
       <div>
@@ -165,7 +165,7 @@ export function Breadcrumb({ items }: { items: { label: string; to?: string }[] 
           <li key={i.label} className="flex items-center gap-2">
             <span>/</span>
             {i.to ? (
-              <Link to={i.to} className="hover:text-accent">
+              <Link to={i.to as never} className="hover:text-accent">
                 {i.label}
               </Link>
             ) : (

@@ -21,7 +21,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {tiposMampara.map((t) => (
               <li key={t.path}>
-                <Link to={t.path} className="opacity-80 hover:text-accent hover:opacity-100">
+                <Link to={t.path as never} className="opacity-80 hover:text-accent hover:opacity-100">
                   {t.titulo}
                 </Link>
               </li>
@@ -34,7 +34,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {nav.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="opacity-80 hover:text-accent hover:opacity-100">
+                <Link to={item.to as never} className="opacity-80 hover:text-accent hover:opacity-100">
                   {item.label}
                 </Link>
               </li>
