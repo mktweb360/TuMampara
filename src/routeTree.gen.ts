@@ -10,33 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MamparasDeDuchaYBaneraRouteImport } from './routes/mamparas-de-ducha-y-banera'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MamparasDeDuchaYBaneraRoute = MamparasDeDuchaYBaneraRouteImport.update({
+  id: '/mamparas-de-ducha-y-banera',
+  path: '/mamparas-de-ducha-y-banera',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/mamparas-de-ducha-y-banera'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/mamparas-de-ducha-y-banera'
+  id: '__root__' | '/' | '/mamparas-de-ducha-y-banera'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  MamparasDeDuchaYBaneraRoute: typeof MamparasDeDuchaYBaneraRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +58,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/mamparas-de-ducha-y-banera': {
+      id: '/mamparas-de-ducha-y-banera'
+      path: '/mamparas-de-ducha-y-banera'
+      fullPath: '/mamparas-de-ducha-y-banera'
+      preLoaderRoute: typeof MamparasDeDuchaYBaneraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  MamparasDeDuchaYBaneraRoute: MamparasDeDuchaYBaneraRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
