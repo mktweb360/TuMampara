@@ -10,43 +10,310 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as FijosDeMamparaBanoRouteImport } from './routes/fijos-de-mampara-bano'
+import { Route as FijosDeMamparaDeDuchaRouteImport } from './routes/fijos-de-mampara-de-ducha'
+import { Route as FijosDeMamparaParaBaneraRouteImport } from './routes/fijos-de-mampara-para-banera'
+import { Route as MamparasAngularesAbatiblesRouteImport } from './routes/mamparas-angulares-abatibles'
+import { Route as MamparasAngularesCorrederasRouteImport } from './routes/mamparas-angulares-correderas'
+import { Route as MamparasAngularesPlegablesRouteImport } from './routes/mamparas-angulares-plegables'
+import { Route as MamparasBaneraFrontalAbatiblesRouteImport } from './routes/mamparas-banera-frontal-abatibles'
+import { Route as MamparasBaneraFrontalesCorrederasRouteImport } from './routes/mamparas-banera-frontales-correderas'
+import { Route as MamparasBaneraFrontalesPlegablesRouteImport } from './routes/mamparas-banera-frontales-plegables'
 import { Route as MamparasDeDuchaYBaneraRouteImport } from './routes/mamparas-de-ducha-y-banera'
+import { Route as MamparasDuchaFrontalAbatiblesRouteImport } from './routes/mamparas-ducha-frontal-abatibles'
+import { Route as MamparasDuchaFrontalesCorrederasRouteImport } from './routes/mamparas-ducha-frontales-correderas'
+import { Route as MamparasDuchaFrontalesPlegablesRouteImport } from './routes/mamparas-ducha-frontales-plegables'
+import { Route as MamparasPuertaPlegableRouteImport } from './routes/mamparas-puerta-plegable'
+import { Route as MamparasPuertasAbatiblesRouteImport } from './routes/mamparas-puertas-abatibles'
+import { Route as MamparasPuertasCorrederasRouteImport } from './routes/mamparas-puertas-correderas'
+import { Route as PantallasDeSeguridadAnticontagioRouteImport } from './routes/pantallas-de-seguridad-anticontagio'
+import { Route as PlatoDeDuchaRouteImport } from './routes/plato-de-ducha'
+import { Route as TendalesRouteImport } from './routes/tendales'
+import { Route as ModeloSlugRouteImport } from './routes/modelo.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FijosDeMamparaBanoRoute = FijosDeMamparaBanoRouteImport.update({
+  id: '/fijos-de-mampara-bano',
+  path: '/fijos-de-mampara-bano',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FijosDeMamparaDeDuchaRoute = FijosDeMamparaDeDuchaRouteImport.update({
+  id: '/fijos-de-mampara-de-ducha',
+  path: '/fijos-de-mampara-de-ducha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FijosDeMamparaParaBaneraRoute =
+  FijosDeMamparaParaBaneraRouteImport.update({
+    id: '/fijos-de-mampara-para-banera',
+    path: '/fijos-de-mampara-para-banera',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasAngularesAbatiblesRoute =
+  MamparasAngularesAbatiblesRouteImport.update({
+    id: '/mamparas-angulares-abatibles',
+    path: '/mamparas-angulares-abatibles',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasAngularesCorrederasRoute =
+  MamparasAngularesCorrederasRouteImport.update({
+    id: '/mamparas-angulares-correderas',
+    path: '/mamparas-angulares-correderas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasAngularesPlegablesRoute =
+  MamparasAngularesPlegablesRouteImport.update({
+    id: '/mamparas-angulares-plegables',
+    path: '/mamparas-angulares-plegables',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasBaneraFrontalAbatiblesRoute =
+  MamparasBaneraFrontalAbatiblesRouteImport.update({
+    id: '/mamparas-banera-frontal-abatibles',
+    path: '/mamparas-banera-frontal-abatibles',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasBaneraFrontalesCorrederasRoute =
+  MamparasBaneraFrontalesCorrederasRouteImport.update({
+    id: '/mamparas-banera-frontales-correderas',
+    path: '/mamparas-banera-frontales-correderas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasBaneraFrontalesPlegablesRoute =
+  MamparasBaneraFrontalesPlegablesRouteImport.update({
+    id: '/mamparas-banera-frontales-plegables',
+    path: '/mamparas-banera-frontales-plegables',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MamparasDeDuchaYBaneraRoute = MamparasDeDuchaYBaneraRouteImport.update({
   id: '/mamparas-de-ducha-y-banera',
   path: '/mamparas-de-ducha-y-banera',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MamparasDuchaFrontalAbatiblesRoute =
+  MamparasDuchaFrontalAbatiblesRouteImport.update({
+    id: '/mamparas-ducha-frontal-abatibles',
+    path: '/mamparas-ducha-frontal-abatibles',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasDuchaFrontalesCorrederasRoute =
+  MamparasDuchaFrontalesCorrederasRouteImport.update({
+    id: '/mamparas-ducha-frontales-correderas',
+    path: '/mamparas-ducha-frontales-correderas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasDuchaFrontalesPlegablesRoute =
+  MamparasDuchaFrontalesPlegablesRouteImport.update({
+    id: '/mamparas-ducha-frontales-plegables',
+    path: '/mamparas-ducha-frontales-plegables',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasPuertaPlegableRoute = MamparasPuertaPlegableRouteImport.update({
+  id: '/mamparas-puerta-plegable',
+  path: '/mamparas-puerta-plegable',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MamparasPuertasAbatiblesRoute =
+  MamparasPuertasAbatiblesRouteImport.update({
+    id: '/mamparas-puertas-abatibles',
+    path: '/mamparas-puertas-abatibles',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MamparasPuertasCorrederasRoute =
+  MamparasPuertasCorrederasRouteImport.update({
+    id: '/mamparas-puertas-correderas',
+    path: '/mamparas-puertas-correderas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PantallasDeSeguridadAnticontagioRoute =
+  PantallasDeSeguridadAnticontagioRouteImport.update({
+    id: '/pantallas-de-seguridad-anticontagio',
+    path: '/pantallas-de-seguridad-anticontagio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlatoDeDuchaRoute = PlatoDeDuchaRouteImport.update({
+  id: '/plato-de-ducha',
+  path: '/plato-de-ducha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TendalesRoute = TendalesRouteImport.update({
+  id: '/tendales',
+  path: '/tendales',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ModeloSlugRoute = ModeloSlugRouteImport.update({
+  id: '/modelo/$slug',
+  path: '/modelo/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/fijos-de-mampara-bano': typeof FijosDeMamparaBanoRoute
+  '/fijos-de-mampara-de-ducha': typeof FijosDeMamparaDeDuchaRoute
+  '/fijos-de-mampara-para-banera': typeof FijosDeMamparaParaBaneraRoute
+  '/mamparas-angulares-abatibles': typeof MamparasAngularesAbatiblesRoute
+  '/mamparas-angulares-correderas': typeof MamparasAngularesCorrederasRoute
+  '/mamparas-angulares-plegables': typeof MamparasAngularesPlegablesRoute
+  '/mamparas-banera-frontal-abatibles': typeof MamparasBaneraFrontalAbatiblesRoute
+  '/mamparas-banera-frontales-correderas': typeof MamparasBaneraFrontalesCorrederasRoute
+  '/mamparas-banera-frontales-plegables': typeof MamparasBaneraFrontalesPlegablesRoute
   '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
+  '/mamparas-ducha-frontal-abatibles': typeof MamparasDuchaFrontalAbatiblesRoute
+  '/mamparas-ducha-frontales-correderas': typeof MamparasDuchaFrontalesCorrederasRoute
+  '/mamparas-ducha-frontales-plegables': typeof MamparasDuchaFrontalesPlegablesRoute
+  '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
+  '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
+  '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/fijos-de-mampara-bano': typeof FijosDeMamparaBanoRoute
+  '/fijos-de-mampara-de-ducha': typeof FijosDeMamparaDeDuchaRoute
+  '/fijos-de-mampara-para-banera': typeof FijosDeMamparaParaBaneraRoute
+  '/mamparas-angulares-abatibles': typeof MamparasAngularesAbatiblesRoute
+  '/mamparas-angulares-correderas': typeof MamparasAngularesCorrederasRoute
+  '/mamparas-angulares-plegables': typeof MamparasAngularesPlegablesRoute
+  '/mamparas-banera-frontal-abatibles': typeof MamparasBaneraFrontalAbatiblesRoute
+  '/mamparas-banera-frontales-correderas': typeof MamparasBaneraFrontalesCorrederasRoute
+  '/mamparas-banera-frontales-plegables': typeof MamparasBaneraFrontalesPlegablesRoute
   '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
+  '/mamparas-ducha-frontal-abatibles': typeof MamparasDuchaFrontalAbatiblesRoute
+  '/mamparas-ducha-frontales-correderas': typeof MamparasDuchaFrontalesCorrederasRoute
+  '/mamparas-ducha-frontales-plegables': typeof MamparasDuchaFrontalesPlegablesRoute
+  '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
+  '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
+  '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/fijos-de-mampara-bano': typeof FijosDeMamparaBanoRoute
+  '/fijos-de-mampara-de-ducha': typeof FijosDeMamparaDeDuchaRoute
+  '/fijos-de-mampara-para-banera': typeof FijosDeMamparaParaBaneraRoute
+  '/mamparas-angulares-abatibles': typeof MamparasAngularesAbatiblesRoute
+  '/mamparas-angulares-correderas': typeof MamparasAngularesCorrederasRoute
+  '/mamparas-angulares-plegables': typeof MamparasAngularesPlegablesRoute
+  '/mamparas-banera-frontal-abatibles': typeof MamparasBaneraFrontalAbatiblesRoute
+  '/mamparas-banera-frontales-correderas': typeof MamparasBaneraFrontalesCorrederasRoute
+  '/mamparas-banera-frontales-plegables': typeof MamparasBaneraFrontalesPlegablesRoute
   '/mamparas-de-ducha-y-banera': typeof MamparasDeDuchaYBaneraRoute
+  '/mamparas-ducha-frontal-abatibles': typeof MamparasDuchaFrontalAbatiblesRoute
+  '/mamparas-ducha-frontales-correderas': typeof MamparasDuchaFrontalesCorrederasRoute
+  '/mamparas-ducha-frontales-plegables': typeof MamparasDuchaFrontalesPlegablesRoute
+  '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
+  '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
+  '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/mamparas-de-ducha-y-banera'
+  fullPaths:
+    | '/'
+    | '/fijos-de-mampara-bano'
+    | '/fijos-de-mampara-de-ducha'
+    | '/fijos-de-mampara-para-banera'
+    | '/mamparas-angulares-abatibles'
+    | '/mamparas-angulares-correderas'
+    | '/mamparas-angulares-plegables'
+    | '/mamparas-banera-frontal-abatibles'
+    | '/mamparas-banera-frontales-correderas'
+    | '/mamparas-banera-frontales-plegables'
+    | '/mamparas-de-ducha-y-banera'
+    | '/mamparas-ducha-frontal-abatibles'
+    | '/mamparas-ducha-frontales-correderas'
+    | '/mamparas-ducha-frontales-plegables'
+    | '/mamparas-puerta-plegable'
+    | '/mamparas-puertas-abatibles'
+    | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/mamparas-de-ducha-y-banera'
-  id: '__root__' | '/' | '/mamparas-de-ducha-y-banera'
+  to:
+    | '/'
+    | '/fijos-de-mampara-bano'
+    | '/fijos-de-mampara-de-ducha'
+    | '/fijos-de-mampara-para-banera'
+    | '/mamparas-angulares-abatibles'
+    | '/mamparas-angulares-correderas'
+    | '/mamparas-angulares-plegables'
+    | '/mamparas-banera-frontal-abatibles'
+    | '/mamparas-banera-frontales-correderas'
+    | '/mamparas-banera-frontales-plegables'
+    | '/mamparas-de-ducha-y-banera'
+    | '/mamparas-ducha-frontal-abatibles'
+    | '/mamparas-ducha-frontales-correderas'
+    | '/mamparas-ducha-frontales-plegables'
+    | '/mamparas-puerta-plegable'
+    | '/mamparas-puertas-abatibles'
+    | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/fijos-de-mampara-bano'
+    | '/fijos-de-mampara-de-ducha'
+    | '/fijos-de-mampara-para-banera'
+    | '/mamparas-angulares-abatibles'
+    | '/mamparas-angulares-correderas'
+    | '/mamparas-angulares-plegables'
+    | '/mamparas-banera-frontal-abatibles'
+    | '/mamparas-banera-frontales-correderas'
+    | '/mamparas-banera-frontales-plegables'
+    | '/mamparas-de-ducha-y-banera'
+    | '/mamparas-ducha-frontal-abatibles'
+    | '/mamparas-ducha-frontales-correderas'
+    | '/mamparas-ducha-frontales-plegables'
+    | '/mamparas-puerta-plegable'
+    | '/mamparas-puertas-abatibles'
+    | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  FijosDeMamparaBanoRoute: typeof FijosDeMamparaBanoRoute
+  FijosDeMamparaDeDuchaRoute: typeof FijosDeMamparaDeDuchaRoute
+  FijosDeMamparaParaBaneraRoute: typeof FijosDeMamparaParaBaneraRoute
+  MamparasAngularesAbatiblesRoute: typeof MamparasAngularesAbatiblesRoute
+  MamparasAngularesCorrederasRoute: typeof MamparasAngularesCorrederasRoute
+  MamparasAngularesPlegablesRoute: typeof MamparasAngularesPlegablesRoute
+  MamparasBaneraFrontalAbatiblesRoute: typeof MamparasBaneraFrontalAbatiblesRoute
+  MamparasBaneraFrontalesCorrederasRoute: typeof MamparasBaneraFrontalesCorrederasRoute
+  MamparasBaneraFrontalesPlegablesRoute: typeof MamparasBaneraFrontalesPlegablesRoute
   MamparasDeDuchaYBaneraRoute: typeof MamparasDeDuchaYBaneraRoute
+  MamparasDuchaFrontalAbatiblesRoute: typeof MamparasDuchaFrontalAbatiblesRoute
+  MamparasDuchaFrontalesCorrederasRoute: typeof MamparasDuchaFrontalesCorrederasRoute
+  MamparasDuchaFrontalesPlegablesRoute: typeof MamparasDuchaFrontalesPlegablesRoute
+  MamparasPuertaPlegableRoute: typeof MamparasPuertaPlegableRoute
+  MamparasPuertasAbatiblesRoute: typeof MamparasPuertasAbatiblesRoute
+  MamparasPuertasCorrederasRoute: typeof MamparasPuertasCorrederasRoute
+  PantallasDeSeguridadAnticontagioRoute: typeof PantallasDeSeguridadAnticontagioRoute
+  PlatoDeDuchaRoute: typeof PlatoDeDuchaRoute
+  TendalesRoute: typeof TendalesRoute
+  ModeloSlugRoute: typeof ModeloSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +325,69 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fijos-de-mampara-bano': {
+      id: '/fijos-de-mampara-bano'
+      path: '/fijos-de-mampara-bano'
+      fullPath: '/fijos-de-mampara-bano'
+      preLoaderRoute: typeof FijosDeMamparaBanoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fijos-de-mampara-de-ducha': {
+      id: '/fijos-de-mampara-de-ducha'
+      path: '/fijos-de-mampara-de-ducha'
+      fullPath: '/fijos-de-mampara-de-ducha'
+      preLoaderRoute: typeof FijosDeMamparaDeDuchaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fijos-de-mampara-para-banera': {
+      id: '/fijos-de-mampara-para-banera'
+      path: '/fijos-de-mampara-para-banera'
+      fullPath: '/fijos-de-mampara-para-banera'
+      preLoaderRoute: typeof FijosDeMamparaParaBaneraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-angulares-abatibles': {
+      id: '/mamparas-angulares-abatibles'
+      path: '/mamparas-angulares-abatibles'
+      fullPath: '/mamparas-angulares-abatibles'
+      preLoaderRoute: typeof MamparasAngularesAbatiblesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-angulares-correderas': {
+      id: '/mamparas-angulares-correderas'
+      path: '/mamparas-angulares-correderas'
+      fullPath: '/mamparas-angulares-correderas'
+      preLoaderRoute: typeof MamparasAngularesCorrederasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-angulares-plegables': {
+      id: '/mamparas-angulares-plegables'
+      path: '/mamparas-angulares-plegables'
+      fullPath: '/mamparas-angulares-plegables'
+      preLoaderRoute: typeof MamparasAngularesPlegablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-banera-frontal-abatibles': {
+      id: '/mamparas-banera-frontal-abatibles'
+      path: '/mamparas-banera-frontal-abatibles'
+      fullPath: '/mamparas-banera-frontal-abatibles'
+      preLoaderRoute: typeof MamparasBaneraFrontalAbatiblesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-banera-frontales-correderas': {
+      id: '/mamparas-banera-frontales-correderas'
+      path: '/mamparas-banera-frontales-correderas'
+      fullPath: '/mamparas-banera-frontales-correderas'
+      preLoaderRoute: typeof MamparasBaneraFrontalesCorrederasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-banera-frontales-plegables': {
+      id: '/mamparas-banera-frontales-plegables'
+      path: '/mamparas-banera-frontales-plegables'
+      fullPath: '/mamparas-banera-frontales-plegables'
+      preLoaderRoute: typeof MamparasBaneraFrontalesPlegablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mamparas-de-ducha-y-banera': {
       id: '/mamparas-de-ducha-y-banera'
       path: '/mamparas-de-ducha-y-banera'
@@ -65,12 +395,102 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MamparasDeDuchaYBaneraRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/mamparas-ducha-frontal-abatibles': {
+      id: '/mamparas-ducha-frontal-abatibles'
+      path: '/mamparas-ducha-frontal-abatibles'
+      fullPath: '/mamparas-ducha-frontal-abatibles'
+      preLoaderRoute: typeof MamparasDuchaFrontalAbatiblesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-ducha-frontales-correderas': {
+      id: '/mamparas-ducha-frontales-correderas'
+      path: '/mamparas-ducha-frontales-correderas'
+      fullPath: '/mamparas-ducha-frontales-correderas'
+      preLoaderRoute: typeof MamparasDuchaFrontalesCorrederasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-ducha-frontales-plegables': {
+      id: '/mamparas-ducha-frontales-plegables'
+      path: '/mamparas-ducha-frontales-plegables'
+      fullPath: '/mamparas-ducha-frontales-plegables'
+      preLoaderRoute: typeof MamparasDuchaFrontalesPlegablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-puerta-plegable': {
+      id: '/mamparas-puerta-plegable'
+      path: '/mamparas-puerta-plegable'
+      fullPath: '/mamparas-puerta-plegable'
+      preLoaderRoute: typeof MamparasPuertaPlegableRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-puertas-abatibles': {
+      id: '/mamparas-puertas-abatibles'
+      path: '/mamparas-puertas-abatibles'
+      fullPath: '/mamparas-puertas-abatibles'
+      preLoaderRoute: typeof MamparasPuertasAbatiblesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mamparas-puertas-correderas': {
+      id: '/mamparas-puertas-correderas'
+      path: '/mamparas-puertas-correderas'
+      fullPath: '/mamparas-puertas-correderas'
+      preLoaderRoute: typeof MamparasPuertasCorrederasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pantallas-de-seguridad-anticontagio': {
+      id: '/pantallas-de-seguridad-anticontagio'
+      path: '/pantallas-de-seguridad-anticontagio'
+      fullPath: '/pantallas-de-seguridad-anticontagio'
+      preLoaderRoute: typeof PantallasDeSeguridadAnticontagioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plato-de-ducha': {
+      id: '/plato-de-ducha'
+      path: '/plato-de-ducha'
+      fullPath: '/plato-de-ducha'
+      preLoaderRoute: typeof PlatoDeDuchaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tendales': {
+      id: '/tendales'
+      path: '/tendales'
+      fullPath: '/tendales'
+      preLoaderRoute: typeof TendalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modelo/$slug': {
+      id: '/modelo/$slug'
+      path: '/modelo/$slug'
+      fullPath: '/modelo/$slug'
+      preLoaderRoute: typeof ModeloSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  FijosDeMamparaBanoRoute: FijosDeMamparaBanoRoute,
+  FijosDeMamparaDeDuchaRoute: FijosDeMamparaDeDuchaRoute,
+  FijosDeMamparaParaBaneraRoute: FijosDeMamparaParaBaneraRoute,
+  MamparasAngularesAbatiblesRoute: MamparasAngularesAbatiblesRoute,
+  MamparasAngularesCorrederasRoute: MamparasAngularesCorrederasRoute,
+  MamparasAngularesPlegablesRoute: MamparasAngularesPlegablesRoute,
+  MamparasBaneraFrontalAbatiblesRoute: MamparasBaneraFrontalAbatiblesRoute,
+  MamparasBaneraFrontalesCorrederasRoute:
+    MamparasBaneraFrontalesCorrederasRoute,
+  MamparasBaneraFrontalesPlegablesRoute: MamparasBaneraFrontalesPlegablesRoute,
   MamparasDeDuchaYBaneraRoute: MamparasDeDuchaYBaneraRoute,
+  MamparasDuchaFrontalAbatiblesRoute: MamparasDuchaFrontalAbatiblesRoute,
+  MamparasDuchaFrontalesCorrederasRoute: MamparasDuchaFrontalesCorrederasRoute,
+  MamparasDuchaFrontalesPlegablesRoute: MamparasDuchaFrontalesPlegablesRoute,
+  MamparasPuertaPlegableRoute: MamparasPuertaPlegableRoute,
+  MamparasPuertasAbatiblesRoute: MamparasPuertasAbatiblesRoute,
+  MamparasPuertasCorrederasRoute: MamparasPuertasCorrederasRoute,
+  PantallasDeSeguridadAnticontagioRoute: PantallasDeSeguridadAnticontagioRoute,
+  PlatoDeDuchaRoute: PlatoDeDuchaRoute,
+  TendalesRoute: TendalesRoute,
+  ModeloSlugRoute: ModeloSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
