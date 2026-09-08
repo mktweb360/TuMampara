@@ -26,6 +26,10 @@ import { Route as MamparasDuchaFrontalesPlegablesRouteImport } from './routes/ma
 import { Route as MamparasPuertaPlegableRouteImport } from './routes/mamparas-puerta-plegable'
 import { Route as MamparasPuertasAbatiblesRouteImport } from './routes/mamparas-puertas-abatibles'
 import { Route as MamparasPuertasCorrederasRouteImport } from './routes/mamparas-puertas-correderas'
+import { Route as PantallasDeSeguridadAnticontagioRouteImport } from './routes/pantallas-de-seguridad-anticontagio'
+import { Route as PlatoDeDuchaRouteImport } from './routes/plato-de-ducha'
+import { Route as TendalesRouteImport } from './routes/tendales'
+import { Route as ModeloSlugRouteImport } from './routes/modelo.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -124,6 +128,27 @@ const MamparasPuertasCorrederasRoute =
     path: '/mamparas-puertas-correderas',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PantallasDeSeguridadAnticontagioRoute =
+  PantallasDeSeguridadAnticontagioRouteImport.update({
+    id: '/pantallas-de-seguridad-anticontagio',
+    path: '/pantallas-de-seguridad-anticontagio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlatoDeDuchaRoute = PlatoDeDuchaRouteImport.update({
+  id: '/plato-de-ducha',
+  path: '/plato-de-ducha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TendalesRoute = TendalesRouteImport.update({
+  id: '/tendales',
+  path: '/tendales',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ModeloSlugRoute = ModeloSlugRouteImport.update({
+  id: '/modelo/$slug',
+  path: '/modelo/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -143,6 +168,10 @@ export interface FileRoutesByFullPath {
   '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
   '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
   '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -162,6 +191,10 @@ export interface FileRoutesByTo {
   '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
   '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
   '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -182,6 +215,10 @@ export interface FileRoutesById {
   '/mamparas-puerta-plegable': typeof MamparasPuertaPlegableRoute
   '/mamparas-puertas-abatibles': typeof MamparasPuertasAbatiblesRoute
   '/mamparas-puertas-correderas': typeof MamparasPuertasCorrederasRoute
+  '/pantallas-de-seguridad-anticontagio': typeof PantallasDeSeguridadAnticontagioRoute
+  '/plato-de-ducha': typeof PlatoDeDuchaRoute
+  '/tendales': typeof TendalesRoute
+  '/modelo/$slug': typeof ModeloSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -203,6 +240,10 @@ export interface FileRouteTypes {
     | '/mamparas-puerta-plegable'
     | '/mamparas-puertas-abatibles'
     | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -222,6 +263,10 @@ export interface FileRouteTypes {
     | '/mamparas-puerta-plegable'
     | '/mamparas-puertas-abatibles'
     | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
   id:
     | '__root__'
     | '/'
@@ -241,6 +286,10 @@ export interface FileRouteTypes {
     | '/mamparas-puerta-plegable'
     | '/mamparas-puertas-abatibles'
     | '/mamparas-puertas-correderas'
+    | '/pantallas-de-seguridad-anticontagio'
+    | '/plato-de-ducha'
+    | '/tendales'
+    | '/modelo/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -261,6 +310,10 @@ export interface RootRouteChildren {
   MamparasPuertaPlegableRoute: typeof MamparasPuertaPlegableRoute
   MamparasPuertasAbatiblesRoute: typeof MamparasPuertasAbatiblesRoute
   MamparasPuertasCorrederasRoute: typeof MamparasPuertasCorrederasRoute
+  PantallasDeSeguridadAnticontagioRoute: typeof PantallasDeSeguridadAnticontagioRoute
+  PlatoDeDuchaRoute: typeof PlatoDeDuchaRoute
+  TendalesRoute: typeof TendalesRoute
+  ModeloSlugRoute: typeof ModeloSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -384,6 +437,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MamparasPuertasCorrederasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pantallas-de-seguridad-anticontagio': {
+      id: '/pantallas-de-seguridad-anticontagio'
+      path: '/pantallas-de-seguridad-anticontagio'
+      fullPath: '/pantallas-de-seguridad-anticontagio'
+      preLoaderRoute: typeof PantallasDeSeguridadAnticontagioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plato-de-ducha': {
+      id: '/plato-de-ducha'
+      path: '/plato-de-ducha'
+      fullPath: '/plato-de-ducha'
+      preLoaderRoute: typeof PlatoDeDuchaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tendales': {
+      id: '/tendales'
+      path: '/tendales'
+      fullPath: '/tendales'
+      preLoaderRoute: typeof TendalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modelo/$slug': {
+      id: '/modelo/$slug'
+      path: '/modelo/$slug'
+      fullPath: '/modelo/$slug'
+      preLoaderRoute: typeof ModeloSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -406,6 +487,10 @@ const rootRouteChildren: RootRouteChildren = {
   MamparasPuertaPlegableRoute: MamparasPuertaPlegableRoute,
   MamparasPuertasAbatiblesRoute: MamparasPuertasAbatiblesRoute,
   MamparasPuertasCorrederasRoute: MamparasPuertasCorrederasRoute,
+  PantallasDeSeguridadAnticontagioRoute: PantallasDeSeguridadAnticontagioRoute,
+  PlatoDeDuchaRoute: PlatoDeDuchaRoute,
+  TendalesRoute: TendalesRoute,
+  ModeloSlugRoute: ModeloSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
